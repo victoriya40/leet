@@ -9,7 +9,7 @@ public:
             if (lastIndex.count(c) && lastIndex[c] >= start) {
                 start = lastIndex[c] + 1;
             }
-lastIndex[c] = end;  // update last seen index
+lastIndex[c] = end; 
             maxLength = max(maxLength, end - start + 1);
         }
         return maxLength;
